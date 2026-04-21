@@ -1,4 +1,15 @@
-a,b,c,d=map(int,input().split())
-if (a+b)-c==d or (a+b)*c==d:
+a, b, c, d = map(int, input().split())
+if a + b * c == d:
     print("YES")
-elif (a-b)+c==d or (a)
+elif a + b - c == d:
+    print("YES")
+elif a - b + c == d:
+    print("YES")
+elif a - b * c == d:
+    print("YES")
+elif a * b + c == d:
+    print("YES")
+elif a * b - c == d:
+    print("YES")
+else:
+    print("NO")
